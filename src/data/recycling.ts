@@ -3,11 +3,11 @@ export interface CountryRecycling {
   code: string;
   lat: number;
   lng: number;
-  recyclingRate?: number | undefined; // percentage of municipal waste recycled/composted
-  totalTonnes?: number | undefined; // thousand tonnes of municipal waste generated per year
-  plasticRate?: number | undefined; // % of plastic waste recycled
-  paperRate?: number | undefined; // % of paper/cardboard recycled
-  glassRate?: number | undefined; // % of glass recycled
+  recyclingRate: number; // percentage of municipal waste recycled/composted
+  totalTonnes: number; // thousand tonnes of municipal waste generated per year
+  plasticRate: number; // % of plastic waste recycled
+  paperRate: number; // % of paper/cardboard recycled
+  glassRate: number; // % of glass recycled
   year: number; // reference year for the data
   source: string; // organisation / report
   sourceUrl: string; // direct link to the dataset or report
@@ -123,9 +123,9 @@ export const recyclingData: CountryRecycling[] = [
     lng: 4.47,
     recyclingRate: 56.2,
     totalTonnes: 8295,
-    plasticRate: undefined,
-    paperRate: undefined,
-    glassRate: undefined,
+    plasticRate: 0,
+    paperRate: 0,
+    glassRate: 0,
     year: 2024,
     source: "Eurostat env_wasmun / env_waspacr",
     sourceUrl: EUROSTAT_MUN,
@@ -153,9 +153,9 @@ export const recyclingData: CountryRecycling[] = [
     lng: 15.47,
     recyclingRate: 43.4,
     totalTonnes: 5840,
-    plasticRate: undefined,
-    paperRate: undefined,
-    glassRate: undefined,
+    plasticRate: 0,
+    paperRate: 0,
+    glassRate: 0,
     year: 2023,
     source: "Eurostat env_wasmun / env_waspacr",
     sourceUrl: EUROSTAT_MUN,
@@ -231,9 +231,9 @@ export const recyclingData: CountryRecycling[] = [
     lng: 25.49,
     recyclingRate: 52.5,
     totalTonnes: 3156,
-    plasticRate: undefined,
-    paperRate: undefined,
-    glassRate: undefined,
+    plasticRate: 0,
+    paperRate: 0,
+    glassRate: 0,
     year: 2023,
     source: "Eurostat env_wasmun / env_waspacr",
     sourceUrl: EUROSTAT_MUN,
@@ -485,9 +485,9 @@ export const recyclingData: CountryRecycling[] = [
     lng: 8.23,
     recyclingRate: 52.0,
     totalTonnes: 6027,
-    plasticRate: undefined,
-    paperRate: undefined,
-    glassRate: undefined,
+    plasticRate: 0,
+    paperRate: 0,
+    glassRate: 0,
     year: 2023,
     source: "Eurostat env_wasmun / env_waspacr",
     sourceUrl: EUROSTAT_MUN,
@@ -499,8 +499,8 @@ export const recyclingData: CountryRecycling[] = [
     code: "LI",
     lat: 47.14,
     lng: 9.55,
-    recyclingRate: undefined,
-    totalTonnes: undefined,
+    recyclingRate: 0,
+    totalTonnes: 0,
     plasticRate: 39.7,
     paperRate: 85.0,
     glassRate: 76.7,

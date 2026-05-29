@@ -4,7 +4,7 @@ An interactive 3D globe visualising municipal waste recycling rates across 32 co
 
 ![recycling globe](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExemNhdHBzYzhxN3VyNDN3cDQ5M282bmh0anN1ajl3Y2dnbDAxcHAzZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OcdBzXdTXBoAXWzV7N/giphy.gif)
 
-**Live demo:** https://thypirate.github.io/recycling-globe/
+**Live demo:** https://thypirate.github.io/recycling/
 
 ## What you're looking at
 

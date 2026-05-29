@@ -88,9 +88,9 @@ export default function Globe({
         pointLat="lat"
         pointLng="lng"
         pointAltitude={0.015}
-        pointRadius={(d) => (d as GlobePoint).size * 0.35}
-        pointColor={(d) =>
-          hovered === d ? "#ffffff" : (d as GlobePoint).color
+        pointRadius={(d: object) => (d as GlobePoint).size * 0.35}
+        pointColor={(d: object) =>
+          hovered === (d as GlobePoint) ? "#ffffff" : (d as GlobePoint).color
         }
         pointResolution={8}
         onPointHover={handlePointHover}
@@ -100,11 +100,11 @@ export default function Globe({
         arcStartLng="startLng"
         arcEndLat="endLat"
         arcEndLng="endLng"
-        arcColor={(d) => (d as GlobeArc).color.slice(0, 7)}
+        arcColor={(d: object) => (d as GlobeArc).color.slice(0, 7)}
         arcDashLength={0.4}
         arcDashGap={0.1}
         arcDashAnimateTime={2000}
-        arcStroke={(d) =>
+        arcStroke={(d: object) =>
           Math.max(0.2, Math.min(1.2, ((d as GlobeArc).tonnes_k ?? 50) / 400))
         }
         arcAltitudeAutoScale={0.3}
@@ -127,7 +127,7 @@ export default function Globe({
           <div style={{ color: "#aac8ff", marginTop: 2 }}>
             Recycling rate:{" "}
             <strong style={{ color: "#fff" }}>
-              {hovered.country.recyclingRate !== undefined
+              {hovered.country.recyclingRate !== 0
                 ? `${hovered.country.recyclingRate}%`
                 : "N/A"}
             </strong>
